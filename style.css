@@ -37,8 +37,6 @@ h2 {
     margin-top: 20px;
 }
 
-
-
 .dashboard000 {
     display: grid;
     grid-template-columns: 1fr 2fr; /* La primera columna ocupa el 33%, la segunda el 66% */

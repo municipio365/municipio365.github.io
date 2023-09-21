@@ -63,6 +63,18 @@ ul {
 }
 
 li {
-    /*text-indent: 20px; */
-    padding-left: 20px; 
+    list-style-type: none; /* Eliminamos la viñeta */
+    position: relative;
+    padding-left: 20px; /* Espacio para la viñeta cuadrada */
+}
+
+li::before {
+    content: "\25A0"; /* Código Unicode para un cuadrado sólido */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    color: white; /* Color del cuadrado */
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Sombra */
+    line-height: inherit;
 }
